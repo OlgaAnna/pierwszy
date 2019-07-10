@@ -17,8 +17,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
-    <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="style.js" async></script>
+    <!-- JQUERY / JAVASCRIPT  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.scrollTo.min.js" async></script>
+
+    <script type="text/javascript" src="scroll.js" async></script>
+
 </head>
 
 <body>
@@ -26,28 +30,32 @@
         <div class="grid">
             <header class="grid-item intro">
 
+                <button class="hamburger"></button>
+
+                <h1 class="article__header">GOOD BOY</h1>
+
                 <div class="paw"><img src="paw.png" alt="Shake paw!"></div>
 
-                <nav>
+                <nav class="navigation">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li>|</li>
-                        <li><a href="#work">WORK</a></li>
-                        <li>|</li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a id="link1" href="#">ABOUT</a></li>
+
+                        <li><a id="link2" href="#">WORK</a></li>
+
+                        <li><a id="link3" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
 
             </header>
 
-            <div class="grid-item grid-item-2">
-                <nav>
+            <div class="grid-item grid-item-2" id="about">
+                <nav class="navigation">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li>|</li>
-                        <li><a href="#work">WORK</a></li>
-                        <li>|</li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a id="link1" href="#">ABOUT</a></li>
+
+                        <li><a id="link2" href="#">WORK</a></li>
+
+                        <li><a id="link3" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -67,14 +75,14 @@
                 </article>
             </section>
 
-            <div class="grid-item grid-item-4">
-                <nav>
+            <div class="grid-item grid-item-4" id="work">
+                <nav class="navigation">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li>|</li>
-                        <li><a href="#work">WORK</a></li>
-                        <li>|</li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a id="link1" href="#">ABOUT</a></li>
+
+                        <li><a id="link2" href="#">WORK</a></li>
+
+                        <li><a id="link3" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -87,14 +95,14 @@
 
             <div class="grid-item grid-item-8">8 pic</div>
 
-            <div class="grid-item grid-item-9">
-                <nav>
+            <div class="grid-item grid-item-9" id="contact">
+                <nav class="navigation">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li>|</li>
-                        <li><a href="#work">WORK</a></li>
-                        <li>|</li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a id="link1" href="#">ABOUT</a></li>
+
+                        <li><a id="link2" href="#">WORK</a></li>
+
+                        <li><a id="link3" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
